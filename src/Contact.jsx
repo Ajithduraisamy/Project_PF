@@ -34,7 +34,7 @@ const Contact = () => {
         },
         onSubmit: async (values, actions) => {
             try {
-                const response = await axios.post('http://localhost:3008/contact', values);
+                const response = await axios.post('https://project-pf-be.onrender.com/contact', values);
                 if (response.status === 200) {
                     alert('Message sent successfully!');
                     actions.resetForm();
